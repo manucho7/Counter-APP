@@ -3,8 +3,8 @@ import ReactDOM from 'react-dom';
 import PrimeraApp from './PrimeraApp';
 import './index.css'
 
-const saludo = <h1>hola mundo</h1>;
+//const saludo = <h1>hola mundo</h1>;
 
 const divRoot = document.querySelector('#root');
 
-ReactDOM.render( <PrimeraApp />, divRoot );
+ReactDOM.render( <PrimeraApp saludo="hola manuchi" />, divRoot );

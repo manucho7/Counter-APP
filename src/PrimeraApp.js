@@ -1,11 +1,23 @@
 //Functional Components con Hooks
-import React from 'react';
+import React, {Fragment} from "react";
+import PropTypes from 'prop-types';
 
-const PrimeraApp = () => {
-    return(
-        <h1>hola mundo</h1>
-    )
+const PrimeraApp = ({saludo, subtitulo}) => {
+
+
+  return (
+    <Fragment>
+      <h1>{ saludo }</h1>
+  <p>{subtitulo}</p>
+    </Fragment>
+  );
+};
+
+PrimeraApp.propTypes = {
+    saludo: PropTypes.string.isRequired
 }
 
-
+PrimeraApp.defaultProps = {
+    subtitulo: 'Soy un subtitulo hermoso'
+}
 export default PrimeraApp;
